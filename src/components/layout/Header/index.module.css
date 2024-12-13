@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+.header h1 {
+    font-size: 28px;
+    width: 600px;
+    color: #FEFFFF;
+}
+.header button {
+    background-color: #17252A;
+    color: #DEF2F1;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.info h1 {
+    text-align: center;
+    padding: 200px 0 30px;
+    color: #FEFFFF;
+    font-size: 53px;
+}
+.info p {
+    text-align: center;
+    color: #17252A;
+    font-size: 28px;
+    width: 50%;
+    margin: 0 auto;
+}

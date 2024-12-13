@@ -1,0 +1,33 @@
+.main {
+    text-align: center;
+    padding-top: 100px;
+}
+.main button {
+    padding: 10px 155px;
+    background: none;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 30px ;
+    cursor: pointer;
+    background-color: #17252A;
+    color: #DEF2F1;
+}
+.inputcss input {
+    width: 325px;
+    transition: .3;
+    height: 25px; 
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    border-radius: 7px;
+    border: 2px solid #3AAFA9;
+    outline: none;
+    background: white;
+}
+.inputcss input::placeholder {
+    color: #17252A;
+}
+.main p {
+    padding-bottom: 10px;
+    color: rgb(255, 16, 16);
+    text-transform: uppercase;
+}

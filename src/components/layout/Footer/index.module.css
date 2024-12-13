@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: #3AAFA9;
+}
+.header h1 {
+    font-size: 28px;
+    width: 600px;
+    color: #FEFFFF;
+}
+.header button {
+    background-color: #17252A;
+    color: #DEF2F1;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
