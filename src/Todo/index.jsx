@@ -9,7 +9,7 @@ export const Todo = () => {
   const {
     get: {
       getTodo,
-      isLoadingGet,
+      // isLoadingGet,
       todos,
     }
   } = useHooks()
