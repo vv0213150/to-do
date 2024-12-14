@@ -18,7 +18,7 @@ export const Todo = () => {
     getTodo('todos')
   }, [getTodo])
   
-  if(isLoadingGet) return <p>Loading...</p>
+  // if(isLoadingGet) return <p>Loading...</p>
 
   return (
     <div >

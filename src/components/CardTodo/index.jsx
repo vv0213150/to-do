@@ -9,10 +9,10 @@ const CardTodo = ({ title, description, id, isDone }) => {
 
   const {
     delete: {
-        deleteTodo
+      deleteTodo
     },
     edit: {
-        editTodo
+      editTodo
     }
   } = useHooks()
 

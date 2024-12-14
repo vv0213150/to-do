@@ -2,13 +2,13 @@ import React from "react"
 const API = 'https://practice-1-92911-default-rtdb.asia-southeast1.firebasedatabase.app/'
 
 export const useHooks = () => {
-    const [isLoadingPost, setIsLoadingPost] = React.useState(false)
-    const [isLoadingGet, setIsLoadingGet] = React.useState(false)
+    // const [isLoadingPost, setIsLoadingPost] = React.useState(false)
+    // const [isLoadingGet, setIsLoadingGet] = React.useState(false)
     const [todos, setTodos] = React.useState(null)
 
     async function postTodo(resourse, body) {
         try {
-                setIsLoadingPost(true)
+                // setIsLoadingPost(true)
                 await fetch(`${API}${resourse}.json`, {
                 method: 'POST',
                 body: JSON.stringify(body)
@@ -16,13 +16,13 @@ export const useHooks = () => {
         } catch (error) {
             console.log(error + 'some errors in postTodo function')
         } finally {
-            setIsLoadingPost(false)
+            // setIsLoadingPost(false)
         }
     }
     
     async function getTodo(resourse) {
         try {
-        setIsLoadingGet(true)
+        // setIsLoadingGet(true)
             const response = await fetch(`${API}${resourse}.json`)
             const data = await response.json()
             const tasks = Object.entries(data).map(([id, task]) => ({
@@ -34,7 +34,7 @@ export const useHooks = () => {
             console.log(error + 'some error in getTodo function')
     
         } finally {
-            setIsLoadingGet(false)
+            // setIsLoadingGet(false)
         }
     }
 
@@ -63,12 +63,12 @@ export const useHooks = () => {
 
     return {
         get: {
-            isLoadingGet,
+            // isLoadingGet,
             todos,
             getTodo,
         },
         post: {
-            isLoadingPost,
+            // isLoadingPost,
             postTodo,
         },
         delete: {

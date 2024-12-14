@@ -15,7 +15,7 @@ const FormTodo = () => {
 
   const {
     post: {
-      isLoadingPost,
+      // isLoadingPost,
       postTodo,
     }
   } = useHooks()
@@ -26,7 +26,7 @@ const FormTodo = () => {
     reset()
   }
 
-  if(isLoadingPost) return <p>loading...</p>
+  // if(isLoadingPost) return <p>loading...</p>
 
   return (
     <form className={cls.main}>
