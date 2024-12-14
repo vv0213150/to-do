@@ -11,15 +11,12 @@ export const Todo = () => {
       getTodo,
       isLoadingGet,
       todos,
-      data
     }
   } = useHooks()
 
   React.useEffect(() => {
     getTodo('todos')
-  }, [])
-
-  console.log(todos)
+  }, [getTodo])
   
   if(isLoadingGet) return <p>Loading...</p>
 

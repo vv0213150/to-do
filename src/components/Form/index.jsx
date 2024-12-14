@@ -18,10 +18,8 @@ const FormTodo = () => {
       isLoadingPost,
       postTodo,
     }
-    
   } = useHooks()
 
-  let uniqId = Math.floor(Math.random)
 
   const createTodo = (data) => {
     postTodo('todos', data)
